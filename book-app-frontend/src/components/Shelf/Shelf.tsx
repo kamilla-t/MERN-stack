@@ -2,7 +2,7 @@ import React from "react";
 import Book from "../Book/Book";
 import "./Shelf.css";
 
-class Shelf extends React.Component {
+class Shelf extends React.Component<{books: any[], selectedBook: any, selectBook: Function}> {
     render(): React.ReactNode {
         return (
             <div className='shelf'>
@@ -10,9 +10,13 @@ class Shelf extends React.Component {
                     <button>+</button>
                 </div>
                 <div className='shelf-content'>
-                    <Book title="Book 1" />
-                    <Book title="Book 2" />
-                    <Book title="Book 3" />
+                    {this.props.books.map(
+                        book => 
+                        <Book 
+                            book={book} 
+                            isSelected={book.id === this.props.selectedBook.id}
+                            selectBook={this.props.selectBook} />
+                    )}
                 </div>
             </div>
         );
