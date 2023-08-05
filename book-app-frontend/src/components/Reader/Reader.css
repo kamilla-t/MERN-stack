@@ -1,0 +1,17 @@
+.reader {
+    width: 75%;
+    background-color: cadetblue;
+    padding: 25px;
+}
+
+.reader input {
+    width: 100%;
+}
+
+.reader-content {
+    margin-top: 10px;
+}
+
+.reader-content-input {
+    min-height: 100px;
+}

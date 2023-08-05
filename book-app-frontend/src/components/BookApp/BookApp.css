@@ -1,0 +1,5 @@
+.book-app {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}

@@ -1,0 +1,13 @@
+.shelf {
+    width: 25%;
+    background-color: bisque;
+    padding: 25px;
+}
+
+.shelf-top {
+    text-align: right;
+}
+
+.shelf-content {
+    margin: 25px 0;
+}
