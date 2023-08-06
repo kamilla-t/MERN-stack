@@ -1,6 +1,5 @@
 import React from "react";
 import "./Book.css";
-import axios from 'axios';
 
 class Book extends React.Component<{book: any, isSelected: boolean, selectBook: Function, deleteBook: Function}> {
 
