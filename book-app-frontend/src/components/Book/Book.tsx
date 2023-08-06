@@ -24,12 +24,12 @@ class Book extends React.Component<{book: any, isSelected: boolean, selectBook: 
             <div className='shelf-book'>
                 <span 
                     className="shelf-book-title"
-                    data-id={this.props.book.id}
+                    data-id={this.props.book._id}
                     style={{color: this.props.isSelected ? "red": "black"}}
                     onClick={this.onBookClick}>
                         {this.props.book.title}
                 </span>
-                <button data-id={this.props.book.id} onClick={this.onDeleteClick}>-</button>
+                <button data-id={this.props.book._id} onClick={this.onDeleteClick}>-</button>
             </div>
         );
     }

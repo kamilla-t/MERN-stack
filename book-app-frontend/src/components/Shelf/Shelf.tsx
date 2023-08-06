@@ -14,7 +14,7 @@ class Shelf extends React.Component<{books: any[], selectedBook: any, addBook: F
                         book => 
                         <Book 
                             book={book} 
-                            isSelected={book.id === this.props.selectedBook.id}
+                            isSelected={book._id === this.props.selectedBook?._id}
                             selectBook={this.props.selectBook} 
                             deleteBook={this.props.deleteBook} 
                         />
