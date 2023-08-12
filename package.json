@@ -4,7 +4,12 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-backend": "npm install --prefix book-app-backend",
+    "install-frontend": "npm install --prefix book-app-frontend start",
+    "start-backend": "npm run --prefix book-app-backend start",
+    "start-frontend": "npm run --prefix book-app-frontend start",
+    "start-all": "npm run start-backend & npm run start-frontend"
   },
   "author": "Kamilla",
   "license": "ISC"
